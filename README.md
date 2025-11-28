@@ -1,16 +1,46 @@
-# simplex
+# 📊 Flutter Simplex Solver
 
-A new Flutter project.
+Um aplicativo móvel desenvolvido em **Flutter** para resolver problemas de Programação Linear utilizando o **Método Simplex Tabular**. O app permite configurar dinamicamente o número de variáveis de decisão e restrições, calculando a solução ótima para maximização de lucros.
 
-## Getting Started
+## 🚀 Funcionalidades
 
-This project is a starting point for a Flutter application.
+- **Configuração Dinâmica:** Defina a quantidade de variáveis ($n$) e restrições ($m$) através de sliders interativos.
+- **Geração de Interface:** Os campos de entrada são gerados automaticamente baseados na configuração do usuário.
+- **Algoritmo Simplex:** Implementação pura em Dart do algoritmo Simplex (sem dependências externas de solvers), capaz de lidar com iterações até encontrar o valor ótimo.
+- **Resultados Detalhados:** Exibe o Lucro Máximo ($Z$) e os valores ideais para cada variável de decisão ($x_1, x_2, ...$).
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tecnologias Utilizadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Linguagem:** Dart
+- **Framework:** Flutter (Material Design 3)
+- **Arquitetura:** MVC (Model-View-Controller) para separação de responsabilidades.
+- **Estrutura de Dados:** Listas e Matrizes para manipulação do Tableau Simplex.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Capturas de Tela (Screenshots)
+
+<img src="caminho_para_sua_imagem.png" width="300">
+
+## 🧮 Como Funciona (Lógica)
+
+O núcleo do projeto é a classe `SimplexSolver`, que realiza:
+
+1. Montagem do Tableau inicial com variáveis de folga.
+2. Identificação da coluna pivô (maior gradiente positivo/negativo).
+3. Teste da razão para identificar a linha pivô.
+4. Escalonamento (Gaussian Elimination) até que não existam coeficientes negativos na linha da função objetivo.
+
+## 🏁 Como Rodar o Projeto
+
+```bash
+# Clone este repositório
+$ git clone [https://github.com/seu-usuario/flutter-simplex-solver.git](https://github.com/seu-usuario/flutter-simplex-solver.git)
+
+# Entre na pasta
+$ cd flutter-simplex-solver
+
+# Instale as dependências
+$ flutter pub get
+
+# Execute o app
+$ flutter run
+```

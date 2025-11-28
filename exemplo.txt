@@ -1,0 +1,30 @@
+
+EXEMPLO DE TESTE
+
+Configuração Inicial:
+
+Variáveis: 3
+Restrições: 4. 
+
+Função Objetivo (Maximizar Z):
+
+Z = 50x_1 + 80x_2 + 100x_3. 
+
+Restrições:
+R1: 2x_1 + 4x_2 + 3x_3 <= 160
+R2: 3x_1 + 2x_2 + 5x_3 <= 180$
+R3: 1x_1 + 1x_2 + 1x_3 <= 50$
+R4: 1x_1 + 2x_2 + 1x_3 <= 80$
+
+
+LUCRO MÁXIMO (Z): 4342.86
+
+Valores ótimos:
+
+x1: 0.00
+
+x2: 18.57
+
+x3: 28.57
+
+
