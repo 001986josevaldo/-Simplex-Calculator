@@ -17,7 +17,7 @@ Um aplicativo móvel desenvolvido em **Flutter** para resolver problemas de Prog
 - **Arquitetura:** MVC (Model-View-Controller) para separação de responsabilidades.
 - **Estrutura de Dados:** Listas e Matrizes para manipulação do Tableau Simplex.
 
-## 📱 Capturas de Tela (Screenshots)
+## 📱 Capturas de Tela
 
 <div style="display: flex; flex-direction: row;">
   <img src="screenshots/conf_simplex.png" width="250" alt="Tela de Configuração">
